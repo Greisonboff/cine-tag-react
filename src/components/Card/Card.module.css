@@ -10,6 +10,7 @@
 
 .capa{
     width: 100%;
+    min-width: 209px;
 }
 
 .container h2, .favoritar{
@@ -24,4 +25,9 @@
     text-decoration: none;
     color: var(--preto);
     text-align: left;
+}
+
+h2{
+    font-size: 20px;
+    text-align: center;
 }
