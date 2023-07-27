@@ -5,6 +5,7 @@ import Card from "components/Card"
 import { useFavoritoContext } from "contextos/Favoritos"
 import { Link } from "react-router-dom"
 
+
 export default function Favoritos() {
     const { favorito } = useFavoritoContext();
     return (
@@ -13,7 +14,15 @@ export default function Favoritos() {
             <Titulo>
                 <h1>Meus filmes favoritos</h1>
             </Titulo>
-            {favorito.length !== 0 &&
+            {favorito.length !== 0 && favorito.length <= 2 &&
+                <section className={styles.containerMin}>
+                    {favorito.map((fav) => {
+                        return <Card {...fav} key={fav.id} />
+                    }
+                    )}
+                </section>
+            }
+            {favorito.length !== 0 && favorito.length > 2 &&
                 <section className={styles.container}>
                     {favorito.map((fav) => {
                         return <Card {...fav} key={fav.id} />
