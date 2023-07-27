@@ -25,10 +25,10 @@ export function useFavoritoContext() {
         if (!favoritoRepetido) {
             novaLista.push(novoFavorito);
             return setFavorito(novaLista);
+        } else {
+            const favoritoRemovido = favorito.filter(item => item.id !== novoFavorito.id);
+            return setFavorito(favoritoRemovido);
         }
-
-        novaLista.splice(novaLista.indexOf(novoFavorito), 1);
-        return setFavorito(novaLista);
     }
     return {
         favorito,
