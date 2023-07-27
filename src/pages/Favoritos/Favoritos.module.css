@@ -1,7 +1,10 @@
-.container{
+.container,
+.containerEmpty {
     display: flex;
     justify-content: center;
 }
+
+
 
 @media (max-width: 850px) {
     .container {
@@ -13,5 +16,9 @@
 @media (max-width: 480px) {
     .container {
         justify-content: normal;
+    }
+
+    a h1 {
+        font-size: 16px;
     }
 }
