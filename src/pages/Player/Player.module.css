@@ -1,3 +1,27 @@
-iframe{
+iframe {
     height: 80vh;
+}
+
+@media (max-width: 1000px) {
+    iframe {
+        height: 70vh;
+    }
+}
+
+@media (max-width: 840px) {
+    iframe {
+        height: 60vh;
+    }
+}
+
+@media (max-width: 740px) {
+    iframe {
+        height: 50vh;
+    }
+}
+
+@media (max-width: 480px) {
+    iframe {
+        height: 40vh;
+    }
 }

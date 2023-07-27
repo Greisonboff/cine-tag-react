@@ -27,7 +27,7 @@ export default function Player() {
             <Titulo>
                 <h1>Player</h1>
             </Titulo>
-            <section className={styles.contaniner}>
+            <section className={styles.container}>
                 <iframe
                     width="100%"
                     height="100%"

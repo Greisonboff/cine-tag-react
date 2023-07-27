@@ -5,6 +5,24 @@
     background-repeat: no-repeat;
 }
 
+@media (max-width: 1000px) {
+    .capa {
+        height: 300px;
+    }
+}
+
+@media (max-width: 840px) {
+    .capa {
+        height: 250px;
+    }
+}
+
+@media (max-width: 740px) {
+    .capa {
+        height: 200px;
+    }
+}
+
 @media (max-width: 480px) {
     .capa {
         height: 150px;
