@@ -1,0 +1,17 @@
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 850px) {
+    .container {
+        overflow: scroll;
+        overflow-y: hidden;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        justify-content: normal;
+    }
+}

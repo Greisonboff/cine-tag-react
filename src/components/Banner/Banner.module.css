@@ -4,3 +4,9 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+@media (max-width: 480px) {
+    .capa {
+        height: 150px;
+    }
+}

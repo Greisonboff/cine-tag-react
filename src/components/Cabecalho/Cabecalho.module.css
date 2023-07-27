@@ -2,6 +2,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.1em 20em;
+    padding: 1% 8%;
     background-color: var(--preto);
+}
+
+@media (max-width: 480px) {
+    img {
+        width: 100px;
+    }
 }

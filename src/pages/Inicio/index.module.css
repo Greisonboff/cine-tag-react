@@ -1,4 +1,12 @@
-.container{
+.container {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+}
+
+@media (max-width: 850px) {
+    .container {
+        overflow: scroll;
+        overflow-y: hidden;
+        justify-content: normal;
+    }
 }
